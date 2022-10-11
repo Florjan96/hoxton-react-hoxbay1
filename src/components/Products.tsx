@@ -10,6 +10,18 @@ export function Products(){
     },[])
     
     return(
-       <h1></h1> 
+      <ul className='products-container__list'>
+        {products.map(product=>(
+<li className='product-item'>
+    <img  src={product.image}></img>
+    <h3>{product.title}</h3>
+
+
+
+</li>
+        ))}
+
+
+      </ul>
     )
 }
