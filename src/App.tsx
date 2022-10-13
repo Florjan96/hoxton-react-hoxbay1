@@ -16,6 +16,7 @@ function App() {
 <Route path='products/:id' element={<ProductDetail/>}/>
 
 <Route path='categories' element={<Categories/>}/>
+<Route path='categories/:id' element={<CategoriesDetail/>}/>
 <Route path='basket' element={<Basket/>}/>
 <Route path='*' element={<h1>Page not found -_-</h1>}/>
 
