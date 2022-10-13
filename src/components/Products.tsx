@@ -13,13 +13,16 @@ export function Products(){
     return(
       <ul className='products-container__list'>
         {products.map(product=>(
-<li className='product-item'>
-    <Link to='/prove'>
-    <img  src={product.image}></img>
-    <h3>{product.title}</h3>
-    </Link>
-
-
+  <li>
+  <a href={`/products/${product.id}`}
+    ><article className="product-item">
+      <img
+        src={product.image}
+        alt={product.title}
+      />
+      <h3>{product.title}</h3>
+    </article></a>
+  
 </li>
         ))}
 
