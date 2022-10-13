@@ -11,7 +11,7 @@ export function ProductDetail(){
     },[])
 
     if(item===null)
-    return <div><h1>Loading</h1></div>
+    return <div><h1>Loading...</h1></div>
 
     return(
         <section className="product-detail main-wrapper">
